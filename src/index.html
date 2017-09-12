@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=11" />
-    <title>AngularBasic</title>
+    <title>The Order of The OctoMoose</title>
     <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -15,11 +15,28 @@
 
 <body>
     <mdb-root></mdb-root>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js"></script>
-        <script>
-        	new WOW().init();
-        </script>
+
+    <!-- FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDzXQQzW6BHXD-PD_eQRr1otkY1SBeNAVg",
+            authDomain: "octomoose-b520c.firebaseapp.com",
+            databaseURL: "https://octomoose-b520c.firebaseio.com",
+            projectId: "octomoose-b520c",
+            storageBucket: "",
+            messagingSenderId: "372853872739"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+    <!-- CLOUDFLARE -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js"></script>
+    <script>
+    	new WOW().init();
+    </script>
 </body>
 
 </html>
