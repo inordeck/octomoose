@@ -10,22 +10,27 @@ participants are nominated by their peers to participate. participants will alte
 inspiration only is a full stack app to fascilitate collabortation between writers and artists on generating original stories.
 
 ## technologies
-angular
-typescript
-material design for bootstrap - angular
-sass
-firebase
-google cloud
-email integration(???)
+* angular
+* typescript
+* material design for bootstrap - angular
+* sass
+* firebase
+* google cloud
+* email integration(???)
 
 ## user flows
-
+[user flows](user-flows-1-01.jpg)
 
 ## site architecture
+[architecture](architecture-1-01.jpg)
+
+## wireframes
 
 
 ## look and feel
+<sup>}}</sup>8<sup>{{</sup>
 google fonts: oswald, playfair display
+
 
 ## links
 * https://angular.io/
