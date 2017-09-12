@@ -1,3 +1,4 @@
+# <sup>}}</sup>8<sup>{{</sup>
 # THE HIGH ORDER OF THE OCTOMOOSE
 
 ## why does this need to exist?
@@ -8,6 +9,9 @@ participants are nominated by their peers to participate. participants will alte
 
 ## what is it?
 inspiration only is a full stack app to fascilitate collabortation between writers and artists on generating original stories.
+
+## user stories
+[trello](https://trello.com/b/6iWEWmYp/project-4-octomoose)
 
 ## technologies
 * angular
