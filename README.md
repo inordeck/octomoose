@@ -19,10 +19,10 @@ inspiration only is a full stack app to fascilitate collabortation between write
 * email integration(???)
 
 ## user flows
-[user flows](user-flows-1-01.jpg)
+(user-flows-1-01.jpg)
 
 ## site architecture
-[architecture](architecture-1-01.jpg)
+(architecture-1-01.jpg)
 
 ## wireframes
 
