@@ -1,29 +1,34 @@
+/* import {  } from './' */
+
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
+
+import { Observable } from 'rxjs';
+import { AppRoutingModule } from './app-routing.module';
+
+/* ANGULAR BOOTSTRAP MATERIAL DESIGN */
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MDBBootstrapModule } from './typescripts/free';
 import { AgmCoreModule } from '@agm/core';
 
+/* SERTVICES */
+import { FirebaseService } from './firebase.service';
+import { ApiKeyService } from './apikey.service';
+import { AuthService } from './auth.service';
+
+/* COMPONENTS */
 import { AppComponent } from './app.component';
-
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { SignupComponent } from './signup/signup.component';
-
-export const firebaseConfig ={
-  apiKey: "AIzaSyDzXQQzW6BHXD-PD_eQRr1otkY1SBeNAVg",
-  authDomain: "octomoose-b520c.firebaseapp.com",
-  databaseURL: "https://octomoose-b520c.firebaseio.com",
-  projectId: "octomoose-b520c",
-  storageBucket: "",
-  messagingSenderId: "372853872739"
-};
+import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SignupComponent
+    SignupComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
@@ -37,8 +42,13 @@ export const firebaseConfig ={
       apiKey: 'Your_api_key'
     })
   ],
-  providers: [],
+  providers: [
+    AuthService,
+    ApiKeyService,
+    FirebaseService,
+  ],
   bootstrap: [AppComponent],
   schemas:      [ NO_ERRORS_SCHEMA ]
 })
+
 export class AppModule { }
