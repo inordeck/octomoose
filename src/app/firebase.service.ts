@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs/Subject';
 import { Observable } from 'rxjs';
 import * as firebase from 'firebase';
-import { ApikeyService } from './apikey.service'; /* need to create */
+import { ApiKeyService } from './apikey.service';
 
 @Injectable()
 
@@ -19,8 +19,8 @@ export class FirebaseService {
 			console.log('initiqalizing firebase');
 			this.firebaseInitialize = true;
 			firebase.initializeApp({
-				apiKey: process.env.firebaseApiKey || this.apiKeyService.firebaseApiKey,
-				authDomain: process.env.firebaseAuthDomain || this.apiKeyService.firebaseAuthDomain
+				apiKey: this.apiKeyService.firebaseApiKey,
+				authDomain: this.apiKeyService.firebaseAuthDomain
 			});
 		}
 
