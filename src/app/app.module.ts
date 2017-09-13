@@ -5,9 +5,19 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MDBBootstrapModule } from './typescripts/free';
 import { AgmCoreModule } from '@agm/core';
+
 import { AppComponent } from './app.component';
 
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
+export const firebaseConfig ={
+  apiKey: "AIzaSyDzXQQzW6BHXD-PD_eQRr1otkY1SBeNAVg",
+  authDomain: "octomoose-b520c.firebaseapp.com",
+  databaseURL: "https://octomoose-b520c.firebaseio.com",
+  projectId: "octomoose-b520c",
+  storageBucket: "",
+  messagingSenderId: "372853872739"
+};
 
 @NgModule({
   declarations: [
