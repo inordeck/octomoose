@@ -19,8 +19,9 @@ export class FirebaseService {
 			console.log('initiqalizing firebase');
 			this.firebaseInitialize = true;
 			firebase.initializeApp({
-				apiKey: this.apiKeyService.firebaseApiKey,
-				authDomain: this.apiKeyService.firebaseAuthDomain
+				firebaseApiKey: this.apiKeyService.firebaseApiKey,
+				firebaseAuthDomain: this.apiKeyService.firebaseAuthDomain,
+				firebaseDatabase: this.apiKeyService.firebaseDatabaseURL
 			});
 		}
 

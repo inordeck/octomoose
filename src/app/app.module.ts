@@ -6,6 +6,11 @@ import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+
+
 import { Observable } from 'rxjs';
 import { AppRoutingModule } from './app-routing.module';
 
@@ -21,6 +26,7 @@ import { AuthService } from './auth.service';
 
 /* COMPONENTS */
 import { AppComponent } from './app.component';
+import { environment } from '../environments/environment';
 import { SignupComponent } from './signup/signup.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 
@@ -35,6 +41,12 @@ import { WelcomeComponent } from './welcome/welcome.component';
     BrowserAnimationsModule,
     FormsModule,
     HttpModule,
+//  imports firebase/app needed for everything
+    AngularFireModule.initializeApp(environment.firebase, 'octomoose'),
+//  imports firebase/database, only needed for database features
+    AngularFireDatabaseModule,
+//  imports firebase/auth, only needed for auth features
+    AngularFireAuthModule,
     MDBBootstrapModule.forRoot(),
     NgbModule.forRoot(),
     AgmCoreModule.forRoot({

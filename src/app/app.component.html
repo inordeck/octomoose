@@ -1,5 +1,11 @@
 <router-outlet></router-outlet>
 
+<ul>
+    <li class="text" *ngFor="let item of items | async">
+        {{item.$value}}
+    </li>
+</ul>
+
 <div class="card">
 
     <!--Card image-->
